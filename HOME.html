@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="css/HOME.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+	</head>
+	<body onload="main()">
+		<div class="container">
+			<div id="bg">
+			</div>
+			<div id="cover">
+			</div>
+			<div id="logo"><a href="HOME.html">LOGO</a></div>
+			<div id="select_container">
+			<div id="l1" onclick=" openLOGIN()"><a id="s1" href="javascript:openLOGIN()" onclick="">LOGIN</a></div>
+			<div id="l2" onclick=" openSIGNUP()"> <a id="s2" href="javascript:openSIGNUP()">SIGNUP</a></div>
+			</div>
+			<div id="search_container">
+			<div id="search_wrapper">
+		<select id="select_place"></select>
+		<div id="search_bar_wrapper">
+	<input type="text"id="search_input" placeholder="SEARCH....." ><button id="search_button">
+	<i class="fa fa-search" aria-hidden="true"></i>
+	</button>
+	</div>
+			</div>
+			</div>
+		</div>
+		<div class="login_overlay" id="overlay">
+			<div id="close" onclick="closeFORM()"><i class="fa fa-times-circle" aria-hidden="true"></i></div>
+			<div id="login_container">
+				<div id="login" onclick="openLOGIN()">
+					<div id="item1"><p>LOGIN</p></div>
+					<div id="item2">
+						<p class="objects">ENTER YOR EMAIL AND PASSWORD <b>TO LOGIN</b></p>
+						<form>
+					<input class="form_inputs" id="email" type="text" placeholder="EMAIL">
+					<input class="form_inputs" id="login_password" type="password" placeholder="PASSWORD">
+					<button class="form_button" id="login">
+						LOGIN
+					</button>
+						</form>
+						<div id="pass_link">
+							<a class="link_hover"  href="#">forgot your password ?</a></div>
+						<div id="facebook_login">
+						<div id="fb_icon">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						</div>
+							<div id="facebook">
+					<a href="#">LOGIN WITH FACEBOOK</a>
+							</div>
+						</div>
+						<div id="gplus_login">
+							<div id="google_icon">
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+							</div>
+						<div id="google">
+					<a href="#">LOGIN WITH GOOGLE+</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="signup" onclick="openSIGNUP()">
+					<div id="item3"><p>SIGNUP</p></div>
+					<div id="item4">
+						<p class="objects">ENTER YOR EMAIL AND PASSWORD <b>TO CREAT NEW ACCOUNT</b></p>
+					   <form>
+					<input class="form_inputs" id="email" type="text" placeholder="EMAIL">
+					<input class="form_inputs" id="signup_password" type="password" placeholder="PASSWORD">
+					<input class="form_inputs" id="re_password" type="password" placeholder="REPEAT PASSWORD">
+					<button class="form_button" id="signup">
+						SIGNUP
+					</button>
+						</form>
+					<div id="terms">
+						<p>By creating an account you agree to our<br>
+					<a class="link_hover"  href="#">Terms and conditions</a></p></div>
+						<div id="facebook_signup">
+						<div id="fb_icon">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						</div>
+							<div id="facebook">
+					<a href="#">CREAT NEW ACCOUNT WITH FACEBOOK</a>
+							</div>
+						</div>
+						<div id="gplus_signup">
+							<div id="google_icon">
+							<i class="fa fa-google-plus" aria-hidden="true"></i>
+							</div>
+						<div id="google">
+					<a href="#">CREAT NEW ACCOUNT WITH GOOGLE+</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="quick_select">
+			<ul class="options_list">
+			<li>
+			<a href="#">
+			<img class="icons"src="images/icons/icn1.jpg"><br>
+			</a>
+			<a  class="q_s_options" href="#">HOTELS</a>
+			</li>
+				<li>
+			<a href="#">
+			<img class="icons"src="images/icons/icn2.jpg"><br>
+			</a>
+			<a  class="q_s_options" href="#">GROCERY</a>
+			</li>
+				<li>
+			<a href="#">
+			<img class="icons"src="images/icons/icn3.jpg"><br>
+			</a>
+			<a  class="q_s_options" href="#">TRAVEL</a>
+			</li>
+			<li>
+			<a href="#">
+			<img class="icons"src="images/icons/icn4.jpg"><br>
+			</a>
+			<a  class="q_s_options" href="#">MEDICARE</a>
+			</li>
+			<li>
+			<a href="#">
+			<img class="icons"src="images/icons/icn5.jpg"><br>
+			</a>
+			<a  class="q_s_options" href="#">FASHION</a>
+			</li>
+			<li>
+			<a href="#">
+			<img class="icons"src="images/icons/icn6.jpg"><br>
+			</a>
+			<a  class="q_s_options" href="#">APPLIANCES</a>
+			</li>
+			<li>
+			<a href="#">
+			<img class="icons"src="images/icons/icn7.jpg"><br>
+			</a>
+			<a  class="q_s_options" href="#">DISCOUNTS</a>
+			</li>
+			</ul>
+		</div>
+		<div class="trending_conatiner">
+			<a class="heading_hover" id="heading_trending" href="#">TRENDING</a>
+		<ul class="trending_grid">
+		<li>
+		<div class="trending_tile tile1 ">
+		<a class="trening_link" href="#">
+		<img class="trending_img" src="images/trending/trd1.jpg">
+		<span class="trending_details"><h1>DESCRIPTION</h1></span>
+		</a>
+		</div>
+		</li>
+		<li>
+		<div class="trending_tile tile2 ">
+		<a  href="#">
+		<img class="trending_img" src="images/trending/trd2.jpg">
+		<span class="trending_details"><h1>DESCRIPTION</h1></span>
+		</a>
+		</div>
+		</li>
+		<li>
+		<div class="trending_tile tile3 ">
+		<a  href="#">
+		<img class="trending_img" src="images/trending/trd3.jpg">
+		<span class="trending_details"><h1>DESCRIPTION</h1></span>
+		</a>
+		</div>
+		</li>
+		<li>
+		<div class="trending_tile tile4 ">
+		<a  href="#">
+		<img class="trending_img" src="images/trending/trd4.jpg">
+		<span class="trending_details"><h1>DESCRIPTION</h1></span>
+		</a>
+		</div>
+		</li>
+		</ul>
+		</div>
+		<div class="offers_containers">
+			<a class="heading_hover" id="offers_heading" href="#">TRENDING OFFERS</a>
+		</div>
+		<div class="first_timers">
+			<a class="heading_hover" id="offer_heading" href="#">OFFERS FOR NEW USERS</a>
+			<ul id="offer_list">
+			<li>
+			<a id="offer_items" href=""><img src="images/new_user_offers/nu1.jpg"></a>
+			</li>
+			<li>
+			<a id="offer_items" href=""><img src="images/new_user_offers/nu2.jpg"></a>
+			</li>
+			<li>
+			<a id="offer_items" href=""><img src="images/new_user_offers/nu3.jpg"></a>
+			</li>
+			</ul>
+		</div>
+			<div class="best_near_you">
+			<a class="heading_hover" id="best_heading" href="#">BEST NEAR YOU</a>
+			<ul id="best_list">
+			<li>
+			<a id="best_items" href="">
+			<div class="bst">
+				<img src="images/bestplaces/bst1.jpg">
+			<span><p>DESCRIPTION</p></span>
+			</div>
+			</a>
+			</li>
+			<li>
+			<a id="best_items" href="">
+			<div class="bst">
+				<img src="images/bestplaces/bst2.jpg">
+				<span><p>DESCRIPTION</p></span>
+			</div></a>
+			</li>
+			<li>
+			<a id="best_items" href="">
+			<div class="bst">
+				<img src="images/bestplaces/bst3.jpg">
+			<span><p>DESCRIPTION</p></span>
+			</div></a>
+			</li>
+			<li>
+			<a id="best_items" href="">
+			<div class="bst">
+				<img src="images/bestplaces/bst4.jpg">
+			<span><p>DESCRIPTION</p></span>
+			</div></a>
+			</li>
+			</ul>
+		</div>
+		<div id="about_site"></div>
+		<div></div>
+		<div id="detail_site"></div>
+		<div></div>
+		<script src="javascript/HOME.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="javascript/jquery.cycle.all.js"></script>
+	</body>
+</html>
+
+
